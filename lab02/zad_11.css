@@ -1,0 +1,15 @@
+li>ul {
+   font-weight: bold; 
+color: green;
+list-style-type:lower-alpha;
+font-weight: bold;
+}
+li>ul>li>ul {
+    font-weight: normal;
+    list-style-type: square;
+    color: blue;
+}
+ul {
+    color: red;
+list-style-type:decimal;
+}
