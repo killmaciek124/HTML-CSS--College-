@@ -1,0 +1,17 @@
+div.box-content {
+width: 50vw;
+border: white 5px solid;
+background-color: grey;
+margin: 20px;
+padding: 20px;
+}
+
+div.box {
+    display: inline-block;
+    background-color: grey;
+    border: 1px black solid;
+}
+
+p {
+    letter-spacing: 1px;
+}
