@@ -1,0 +1,15 @@
+p.title {
+    font-weight: bold;
+}
+#bold {
+
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+.info {
+    color: red;
+    font-weight: bold;
+}
