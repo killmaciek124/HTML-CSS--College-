@@ -33,10 +33,11 @@ a:hover {
 }
 
 #content {
-  margin-top: 100px;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 
-br {
-  margin: 50px;
+p {
+  margin: 20px;
 }
 /*# sourceMappingURL=zad_03.css.map */
