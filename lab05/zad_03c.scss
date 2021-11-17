@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#outer>div.box:nth-child(1) {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    
+}
+#outer>div.box:nth-child(2) {
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    align-self: center; 
+}
+#outer>div.box:nth-child(3) {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    align-self: flex-end;
+}
+    #outer {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+       
+    }
+.box {
+    text-align: center;
+    padding-top: 10px;
+}

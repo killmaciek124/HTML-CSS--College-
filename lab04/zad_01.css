@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.C {
+  text-align: center;
+  border: solid red 2px;
+  background-color: yellow;
+  padding-left: 10px;
+  position: relative;
+}
+
+div {
+  display: inline-block;
+  padding: 2px;
+}
+
+.A {
+  position: relative;
+  padding-left: 15px;
+  padding-left: 3px;
+  position: relative;
+  top: 4px;
+}
+
+.B {
+  position: relative;
+  bottom: 4px;
+}
+/*# sourceMappingURL=zad_01.css.map */
