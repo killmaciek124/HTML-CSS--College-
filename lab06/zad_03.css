@@ -6,49 +6,83 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "info item-1 image  ";
+  -ms-grid-columns: (400px)[3];
+      grid-template-columns: repeat(3, 400px);
+  -ms-grid-rows: (150px)[3];
+      grid-template-rows: repeat(3, 150px);
+      grid-template-areas: "item-1 item-2 image" "item-3 item-3 image" "item-3 item-3 info";
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
 }
 
 .image {
   background-image: url(foggy.jpg);
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
   border-radius: 15px;
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: image;
 }
 
 .info {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: info;
-  background-color: red;
+  background-color: #34352f;
   border-radius: 15px;
-  color: white;
+  color: #7e7f7b;
 }
 
 .item-1 {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: item-1;
-  background-color: rebeccapurple;
+  background-color: #34352f;
   border-radius: 15px;
-  color: white;
+  color: #7e7f7b;
 }
 
 .item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: item-2;
-  background-color: violet;
+  background-color: #34352f;
   border-radius: 15px;
-  color: white;
+  color: #7e7f7b;
 }
 
 .item-3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: item-3;
   background-color: #34352f;
   border-radius: 15px;
+  color: #7e7f7b;
+}
+
+.header {
   color: white;
+  font-size: 17px;
+  margin: 20px;
+}
+
+.description {
+  margin: 20px;
+  font-size: 13px;
+  padding: 10px;
+}
+
+p {
+  margin: 20px;
 }
 /*# sourceMappingURL=zad_03.css.map */

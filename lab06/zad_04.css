@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
+}
+
+nav {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  -webkit-box-shadow: whitesmoke 7px 7px 7px;
+          box-shadow: whitesmoke 7px 7px 7px;
+}
+
+nav > ul {
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  list-style: none;
+  font-weight: bolder;
+}
+
+li {
+  margin: 0 20px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+footer {
+  width: 100vw;
+  background-color: #dfe9ec;
+  height: 10vh;
+}
+
+.button {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 300px;
+  height: 80px;
+  background-color: white;
+}
+
+.button > button {
+  background-color: #16165f;
+  color: white;
+  border-radius: 25px;
+  width: 90%;
+  height: 70%;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+
+.important-box {
+  color: orangered;
+}
+
+.second-important-box {
+  color: olivedrab;
+}
+
+main > div {
+  border: 1px solid black;
+}
+
+.header-panel {
+  width: auto;
+  height: 80px;
+}
+/*# sourceMappingURL=zad_04.css.map */
