@@ -57,33 +57,8 @@ section.box>div.title {
     font-size: 40px;
     margin-bottom: 20px;
 }
-// ROZWIAZANIE GRID ****** PARTLY DZIALA SPYTAJ PANI 
-// .items {
-//    justify-content: center;
-//    align-content: center; 
-//    display: grid;
-//     grid-gap: 20px;
-//     grid-template-columns: repeat(3,30vh);
-//     grid-template-rows: repeat(4,20vw);
 
-//   margin: 40px;
-  
- 
-    
-    
-// }
-// .item {
-//     display: grid;
-//     border: solid black 3px;
-    
 
-// }
-// .item:nth-child(11) {
-
-// }
-// .item:nth-child(10) {
-   
-// }
 // ROZWIĄZANIE FLEX **********
 section>div.items  {
     display: flex;
