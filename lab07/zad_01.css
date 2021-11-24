@@ -1,0 +1,110 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "orange1 orange1 orange1 orange1 orange1 orange1 orange2 orange2 orange2 orange2 orange2 orange2" "green green green green green green green green green green green green" "blue1 blue1 blue1 blue1 blue2 blue2 blue2 blue2 blue3 blue3 blue3 blue3" "gray1 gray1 gray1 gray2 gray2 gray2 gray3 gray3 gray3 gray4 gray4 gray4";
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  height: 50vh;
+  margin: 30px 5vw;
+  grid-gap: 15px;
+}
+
+div.bg-color {
+  border-radius: 20px;
+}
+
+.container > div:nth-child(1) {
+  background-color: orange;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: orange1;
+}
+
+.container > div:nth-child(2) {
+  background-color: orange;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-area: orange2;
+}
+
+.container > div:nth-child(3) {
+  background-color: green;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: green;
+}
+
+.container > div:nth-child(4) {
+  background-color: blue;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: blue1;
+}
+
+.container > div:nth-child(5) {
+  background-color: blue;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: blue2;
+}
+
+.container > div:nth-child(6) {
+  background-color: blue;
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: blue3;
+}
+
+.container > div:nth-child(7) {
+  background-color: gray;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: gray1;
+}
+
+.container > div:nth-child(8) {
+  background-color: gray;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: gray2;
+}
+
+.container > div:nth-child(9) {
+  background-color: gray;
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-area: gray3;
+}
+
+.container > div:nth-child(10) {
+  background-color: gray;
+  -ms-grid-row: 4;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-area: gray4;
+}
+
+@media (max-width: 768px) {
+  div.container {
+    margin: 20px;
+    height: 100vh;
+  }
+  div.blue {
+    grid-column: span 12;
+    grid-row: span 3;
+  }
+  div.orange {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+}
+/*# sourceMappingURL=zad_01.css.map */
