@@ -1,0 +1,74 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color:  #1d1e19; 
+ 
+}
+
+  .container {
+    display: grid;
+  
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(3,150px); 
+    grid-template-areas: 
+    "item-1 item-2 image"
+      "item-3 item-3 image"
+      "item-3 item-3 info"
+    ;
+    grid-gap: 20px;
+    justify-content: center;
+align-content: center;
+   height: 100vh;
+}
+.image {
+     background-image: url(foggy.jpg);
+    background-position: center;
+         width: auto;
+    height: auto;    
+    border-radius: 15px;
+    grid-area: image;
+
+}
+.info {
+    grid-area: info;
+    background-color: #34352f; 
+    border-radius: 15px;
+    color: #7e7f7b;
+    
+}
+
+.item-1 {
+    grid-area: item-1;
+    background-color: #34352f; 
+    border-radius: 15px;
+    color: #7e7f7b;
+}
+.item-2 {
+    grid-area: item-2;
+    background-color: #34352f; 
+    border-radius: 15px;
+    color:#7e7f7b;
+
+}
+.item-3 {
+    grid-area: item-3;
+  background-color: #34352f; 
+    border-radius: 15px;
+    color:#7e7f7b;
+}
+.header {
+    color: white;
+    font-size: 17px;
+    margin: 20px;
+   
+}
+.description {
+  
+    margin: 20px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+p {
+margin: 20px;
+}
+
