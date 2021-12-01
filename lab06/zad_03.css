@@ -10,7 +10,7 @@ body {
       grid-template-columns: repeat(3, 400px);
   -ms-grid-rows: (150px)[3];
       grid-template-rows: repeat(3, 150px);
-      grid-template-areas: "item-1 item-2 image" "item-3 item-3 image" "item-3 item-3 info";
+      grid-template-areas: "item-1 item-2 image" "item-3 item-3 image" "item-3 item-3 info";
   grid-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
