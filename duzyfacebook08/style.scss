@@ -1,0 +1,322 @@
+.btn:hover {
+    filter: brightness(30%);
+}
+
+.row:last-child:hover {
+    filter: brightness(30%);
+}
+
+.header {
+    position: relative;
+    background-image: url(foggy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    margin-bottom: 70px;
+
+    >.btn {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        margin: 15px;
+        border: none;
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    >.name {
+        bottom: -50px;
+        position: absolute;
+
+    }
+
+    >.header-content {
+        position: absolute;
+        bottom: -50px;
+
+
+        >.change-photo {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            left: 100px;
+            bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+        }
+
+        >.logo {
+            width: 140px;
+            height: 140px;
+            background-color: lightskyblue;
+            border-radius: 100px;
+            border: 3px solid black;
+
+
+        }
+    }
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+
+}
+
+// LEWA STRONA : 
+.left {
+    position: sticky;
+    top: 20px;
+    height: 100px;
+    margin-right: 0;
+
+
+    >.box {
+        margin: 0 30px 30px 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        // position: sticky;
+        // top: 20px;
+        >.photos {
+            margin: 20px 0;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            >.photo {
+                width: 100px;
+                height: 100px;
+                align-self: center;
+                justify-self: center;
+
+            }
+        }
+
+        >.row:last-child {
+            display: flex;
+            justify-content: center;
+            padding: 3px 10px;
+            background-color: pink;
+            border-radius: 20px;
+            width: 90%;
+            height: 90%;
+            align-self: center;
+            margin-bottom: 10px;
+
+            >.btn {
+                background-color: transparent;
+                border: none;
+                font-size: 20px;
+            }
+        }
+
+        >.row {
+            display: flex;
+            flex-direction: row;
+            padding-left: 6px;
+
+            >.icon {
+                align-self: center;
+
+            }
+        }
+    }
+}
+
+//PRAWA STRONA 
+.right {
+    padding-left: 20px;
+    width: 100%;
+
+    >.box {
+        >.box-header {
+            display: flex;
+
+            >.logo {
+                width: 40px;
+                height: 40px;
+                background-color: lightskyblue;
+                border-radius: 40px;
+                margin: 5px;
+            }
+
+            >.details {
+                align-self: center;
+                width: 70%;
+                padding-left: 10px;
+
+                >.author {
+                    color: white;
+                }
+
+                >.date {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    >.box:first-child {
+        padding-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        >#name {
+            color: black;
+            width: 60%;
+            padding: 10px;
+            align-self: center;
+            width: 90%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        >.logo {
+            width: 40px;
+            height: 40px;
+            background-color: lightskyblue;
+            border-radius: 40px;
+            margin: 5px;
+        }
+
+        >.options {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            border-top: solid 1px black;
+
+            >.btn {
+                border: none;
+                background-color: transparent;
+
+
+
+
+
+            }
+        }
+    }
+}
+
+.options>.btn:last-child>i {
+
+    color: blue;
+}
+
+.options>.btn:first-child>i {
+
+    color: green;
+}
+
+.options>.btn:nth-child(2)>i {
+
+    color: red;
+}
+
+// MESSSENGER  : 
+.message-items {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(105, 5, 235, 0.5);
+    border-radius: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#message-box {
+    position: fixed;
+    bottom: 100px;
+    right: 70px;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(102, 126, 150);
+    > .message {
+        height: 100%;
+        > .message-input {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+            > #message {
+                border-radius: 10px;
+            }
+        }
+        >.message-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            >.logo {
+                width: 40px;
+                height: 40px;
+                background-color: lightskyblue;
+                border-radius: 40px;
+                margin: 5px;
+            }
+            > #min-icon {
+                position: relative;
+                right: -120px;
+            }
+        }
+        > .message-content {
+           padding: 5px;
+            display: grid;
+            height: 70%;
+            background-color: rgb(102, 126, 150);
+            grid-template-rows: 12% 12% 12%  22% 12% 0;
+           >.message-a {
+               justify-self: end;
+               display: flex;
+               background-color: pink;
+               border-radius: 10px;
+               text-align: center;
+               margin: 5px;
+               padding: 2px;
+           }
+           >.message-b {
+            justify-self: start;
+            background-color: gray;
+            border-radius: 10px;
+            display: flex;
+            margin: 5px;
+            padding: 2px;
+        }
+        }
+    }
+}
+
+.message-items {
+    > #message-anna {
+            width: 40px;
+            height: 40px;
+            background-color: lightskyblue;
+            border-radius: 20px;
+            margin: 5px;
+            position: fixed;
+            bottom: 80px;
+    }
+}

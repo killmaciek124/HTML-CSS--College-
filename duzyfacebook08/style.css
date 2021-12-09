@@ -1,0 +1,375 @@
+.btn:hover {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.row:last-child:hover {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.header {
+  position: relative;
+  background-image: url(foggy.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.header > .btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  margin: 15px;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.header > .name {
+  bottom: -50px;
+  position: absolute;
+}
+
+.header > .header-content {
+  position: absolute;
+  bottom: -50px;
+}
+
+.header > .header-content > .change-photo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  left: 100px;
+  bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+.header > .header-content > .logo {
+  width: 140px;
+  height: 140px;
+  background-color: lightskyblue;
+  border-radius: 100px;
+  border: 3px solid black;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  height: 100px;
+  margin-right: 0;
+}
+
+.left > .box {
+  margin: 0 30px 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+.left > .box > .photos {
+  margin: 20px 0;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.left > .box > .photos > .photo {
+  width: 100px;
+  height: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.left > .box > .row:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px 10px;
+  background-color: pink;
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 10px;
+}
+
+.left > .box > .row:last-child > .btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+.left > .box > .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 6px;
+}
+
+.left > .box > .row > .icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.right {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.right > .box > .box-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right > .box > .box-header > .logo {
+  width: 40px;
+  height: 40px;
+  background-color: lightskyblue;
+  border-radius: 40px;
+  margin: 5px;
+}
+
+.right > .box > .box-header > .details {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  padding-left: 10px;
+}
+
+.right > .box > .box-header > .details > .author {
+  color: white;
+}
+
+.right > .box > .box-header > .details > .date {
+  font-size: 10px;
+}
+
+.right > .box:first-child {
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.right > .box:first-child > #name {
+  color: black;
+  width: 60%;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+}
+
+.right > .box:first-child > .logo {
+  width: 40px;
+  height: 40px;
+  background-color: lightskyblue;
+  border-radius: 40px;
+  margin: 5px;
+}
+
+.right > .box:first-child > .options {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  border-top: solid 1px black;
+}
+
+.right > .box:first-child > .options > .btn {
+  border: none;
+  background-color: transparent;
+}
+
+.options > .btn:last-child > i {
+  color: blue;
+}
+
+.options > .btn:first-child > i {
+  color: green;
+}
+
+.options > .btn:nth-child(2) > i {
+  color: red;
+}
+
+.message-items {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(105, 5, 235, 0.5);
+  border-radius: 40px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+#message-box {
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  height: 400px;
+  width: 300px;
+  background-color: #667e96;
+}
+
+#message-box > .message {
+  height: 100%;
+}
+
+#message-box > .message > .message-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+}
+
+#message-box > .message > .message-input > #message {
+  border-radius: 10px;
+}
+
+#message-box > .message > .message-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#message-box > .message > .message-header > .logo {
+  width: 40px;
+  height: 40px;
+  background-color: lightskyblue;
+  border-radius: 40px;
+  margin: 5px;
+}
+
+#message-box > .message > .message-header > #min-icon {
+  position: relative;
+  right: -120px;
+}
+
+#message-box > .message > .message-content {
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  height: 70%;
+  background-color: #667e96;
+  -ms-grid-rows: 12% 12% 12%  22% 12% 0;
+      grid-template-rows: 12% 12% 12%  22% 12% 0;
+}
+
+#message-box > .message > .message-content > .message-a {
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: pink;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+}
+
+#message-box > .message > .message-content > .message-b {
+  justify-self: start;
+  background-color: gray;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  padding: 2px;
+}
+
+.message-items > #message-anna {
+  width: 40px;
+  height: 40px;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  margin: 5px;
+  position: fixed;
+  bottom: 80px;
+}
+/*# sourceMappingURL=style.css.map */

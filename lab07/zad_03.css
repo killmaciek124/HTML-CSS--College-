@@ -1,0 +1,329 @@
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 1000px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.header > .name {
+  font-weight: bold;
+  font-size: 36px;
+  bottom: 0;
+  left: 200px;
+  position: absolute;
+}
+
+.header > .logo {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  border: rgba(255, 255, 255, 0.2) solid 8px;
+  background-clip: padding-box;
+  background-color: aqua;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header > .change-photo {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 130px;
+}
+
+.nav {
+  background-color: lightgray;
+  border-radius: 10px;
+  position: relative;
+}
+
+.box menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  list-style: none;
+}
+
+.menu-list > .menu-item {
+  margin: 4px;
+  padding: 8px;
+}
+
+.menu-list > .menu-item > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.menu-item:hover {
+  border-radius: 10px;
+  background-color: pink;
+}
+
+.left > .box {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border-radius: 10px;
+  margin-top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+.left > .box > .photos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33.33%)[3];
+      grid-template-columns: repeat(3, 33.33%);
+  -ms-grid-rows: (33.33%)[3];
+      grid-template-rows: repeat(3, 33.33%);
+  margin-left: 20px;
+}
+
+.left > .box > .photos > .photo {
+  background-color: rosybrown;
+  width: 130px;
+  height: 130px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 5px;
+  gap: 10px;
+}
+
+.buttons > .btn {
+  border-radius: 10px;
+  width: 70%;
+}
+
+.buttons > .btn:nth-child(1) {
+  width: 150%;
+}
+
+.photo > .content {
+  display: none;
+}
+
+.photo:hover {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.photo:hover > .content {
+  display: block;
+}
+
+.left > .box > .photos > div:nth-of-type(1) {
+  background-color: red;
+}
+
+.left > .box > .photos > div:nth-of-type(2) {
+  background-color: blue;
+}
+
+.left > .box > .photos > div:nth-of-type(2) {
+  background-color: lightgreen;
+}
+
+.left > .box > .photos > div:nth-of-type(3) {
+  background-color: yellow;
+}
+
+.left > .box > .photos > div:nth-of-type(4) {
+  background-color: palevioletred;
+}
+
+.left > .box > .photos > div:nth-of-type(5) {
+  background-color: rebeccapurple;
+}
+
+.left > .box > .photos > div:nth-of-type(6) {
+  background-color: rebeccapurple;
+}
+
+.left > .box > .photos > div:nth-of-type(7) {
+  background-color: rebeccapurple;
+}
+
+.left > .box > .photos > div:nth-of-type(8) {
+  background-color: rebeccapurple;
+}
+
+.left > .box > .photos > div:nth-of-type(9) {
+  background-color: rebeccapurple;
+}
+
+.left > .box > .photos > div:nth-of-type(10) {
+  background-color: rebeccapurple;
+}
+
+.box > h2 {
+  padding: 0 30px;
+}
+
+.footer {
+  width: 500px;
+  background-color: rosybrown;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.footer > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.footer > ul > li:nth-child(2) {
+  border-left: 2px solid black;
+  padding-left: 10px;
+}
+
+.right {
+  width: auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right > .box > .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  width: auto;
+  height: 400px;
+}
+
+.right > .box > .photos > .photo {
+  background-color: green;
+  border: solid 1px black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+}
+
+.box > p,
+a,
+h3 {
+  margin: 20px;
+}
+
+.box:last-child > p {
+  text-align: center;
+}
+
+.right > .box:last-child {
+  background-color: blanchedalmond;
+}
+
+.right > .box {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.right > * {
+  border: solid black 2px;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=zad_03.css.map */

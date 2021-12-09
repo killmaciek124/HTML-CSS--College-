@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.header > .logo {
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  border: solid rgba(255, 255, 255, 0.5) 9px;
+  background-color: lightseagreen;
+  background-clip: padding-box;
+}
+
+.header > .name {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header > .change-photo {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  position: absolute;
+  border: solid rgba(255, 255, 255, 0.5) 9px;
+  background-clip: padding-box;
+  left: 115px;
+  bottom: 10px;
+}
+
+.box.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.box.menu > .menu-list {
+  width: 50%;
+  height: 80%;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.box.menu > .menu-list > .menu-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.box.menu > .menu-list > .menu-item:hover {
+  background-color: rosybrown;
+}
+
+.box.menu > .menu-list > li > a {
+  text-decoration: none;
+}
+
+.box.menu > .buttons {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 2px 5px;
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.box.menu > .buttons > .btn:first-child {
+  width: 20%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.box.menu > .buttons > .btn {
+  width: 10%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 0;
+}
+
+.left {
+  width: 400px;
+  margin-right: 40px;
+  height: auto;
+}
+
+.left > .box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 50px 1fr;
+      grid-template-rows: 50px 1fr;
+  height: 500px;
+  width: 100%;
+  background-color: rosybrown;
+  border-radius: 10px;
+}
+
+.left > .box > h2 {
+  padding: 10px;
+}
+
+.left > .box > .photos {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 8px;
+  -ms-grid-rows: (31%)[3];
+      grid-template-rows: repeat(3, 31%);
+  -ms-grid-columns: (31%)[3];
+      grid-template-columns: repeat(3, 31%);
+  gap: 10px;
+}
+
+.left > .box > .photos > .photo {
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left > .box > .photos > .photo > .content {
+  display: none;
+}
+
+.left > .box > .photos > .photo:hover {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.left > .box > .photos > .photo:hover > .content {
+  display: block;
+}
+
+.left > .box > .photos > .photo:nth-child(1) {
+  background-color: red;
+}
+
+.left > .box > .photos > .photo:nth-child(2) {
+  background-color: black;
+}
+
+.left > .box > .photos > .photo:nth-child(3) {
+  background-color: yellow;
+}
+
+.left > .box > .photos > .photo:nth-child(4) {
+  background-color: yellowgreen;
+}
+
+.left > .box > .photos > .photo:nth-child(5) {
+  background-color: pink;
+}
+
+.left > .box > .photos > .photo:nth-child(6) {
+  background-color: rosybrown;
+}
+
+.left > .box > .photos > .photo:nth-child(7) {
+  background-color: green;
+}
+
+.left > .box > .photos > .photo:nth-child(8) {
+  background-color: gray;
+}
+
+.left > .box > .photos > .photo:nth-child(9) {
+  background-color: violet;
+}
+
+.left > .box > .photos > .photo:nth-child(10) {
+  background-color: blue;
+}
+
+.container .right {
+  width: 600px;
+}
+
+.container .right > .box:first-child {
+  margin-top: 0;
+}
+
+.container .right > .box {
+  background-color: gray;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.container .right > .box > .photos {
+  border: solid 1px black;
+  background-color: cadetblue;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .right > .box > .photos > .photo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  border: solid 1px black;
+  height: 200px;
+}
+
+.footer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.footer > ul > li:nth-child(2) {
+  border-left: solid 1px black;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+p, h3 {
+  padding: 10px;
+}
+
+.box:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

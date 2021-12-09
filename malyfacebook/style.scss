@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // background-color: rgb(28, 30, 33);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    width: 1000px;
+    margin: 0 auto;
+
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    >.logo {
+        width: 170px;
+        height: 170px;
+        border-radius: 100px;
+        border: solid rgba(255, 255, 255, 0.5) 9px;
+        background-color: lightseagreen;
+        background-clip: padding-box;
+    }
+
+    >.name {
+        align-self: flex-end;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    >.change-photo {
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        position: absolute;
+        border: solid rgba(255, 255, 255, 0.5) 9px;
+        background-clip: padding-box;
+        left: 115px;
+        bottom: 10px;
+    }
+}
+
+// PASEK NAWIGACJI MAŁY : 
+.box.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    >.menu-list {
+        width: 50%;
+        height: 80%;
+        padding: 3px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+
+        >.menu-item {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        >.menu-item:hover {
+            background-color: rosybrown;
+        }
+
+        >li>a {
+            text-decoration: none;
+        }
+    }
+
+    >.buttons {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        margin: 2px 5px;
+height: 80%;
+        align-items: center;
+        flex-direction: row;
+
+        >.btn:first-child {
+            width: 20%;
+            height: 80%;
+            border-radius: 10px;
+            margin: 3px;
+
+        }
+
+        >.btn {
+            width: 10%;
+            height: 80%;
+            border-radius: 10px;
+            margin: 3px;
+
+        }
+    }
+}
+
+// DOLNA CZESC STRONY POSTY I ZDJECIA : 
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+}
+
+.left {
+    width: 400px;
+    margin-right: 40px;
+    height: auto;
+
+
+    >.box {
+        position: sticky;
+        top: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 1fr;
+        height: 500px; // TUTAJ BYŁ BŁĄD Z ROZCIĄGNIĘCIEM DWÓCH ELEMENTÓW W KONTENERZE 
+        width: 100%;
+        background-color: rosybrown;
+        border-radius: 10px;
+
+
+        >h2 {
+            padding: 10px;
+
+        }
+
+        >.photos {
+            display: grid;
+
+            margin-left: 8px;
+            grid-template-rows: repeat(3, 31%);
+            grid-template-columns: repeat(3, 31%);
+            gap: 10px;
+
+            >.photo {
+
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >.content {
+                    display: none;
+
+                }
+            }
+
+            >.photo:hover {
+                filter: brightness(0.3);
+
+                >.content {
+                    display: block;
+                }
+            }
+
+            >.photo:nth-child(1) {
+                background-color: red;
+            }
+
+            >.photo:nth-child(2) {
+                background-color: black;
+            }
+
+            >.photo:nth-child(3) {
+                background-color: yellow;
+            }
+
+            >.photo:nth-child(4) {
+                background-color: yellowgreen;
+            }
+
+            >.photo:nth-child(5) {
+                background-color: pink;
+            }
+
+            >.photo:nth-child(6) {
+                background-color: rosybrown;
+            }
+
+            >.photo:nth-child(7) {
+                background-color: green;
+            }
+
+            >.photo:nth-child(8) {
+                background-color: gray;
+            }
+
+            >.photo:nth-child(9) {
+                background-color: violet;
+            }
+
+            >.photo:nth-child(10) {
+                background-color: blue;
+            }
+        }
+    }
+}
+
+// PRAWA STRONA :
+.container {
+
+    .right {
+        // height: auto;
+        width: 600px;
+        > .box:first-child {
+            margin-top: 0;
+        }
+
+        >.box {
+            background-color: gray;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding-bottom: 20px;
+
+            >.photos {
+
+                border: solid 1px black;
+                background-color: cadetblue;
+                height: 80%;
+                display: flex;
+                flex-wrap: wrap;
+
+                >.photo {
+                    flex: 1 1 33%;
+                    border: solid 1px black;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// FOOTER : 
+.footer>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    font-size: 15px;
+
+    >li:nth-child(2) {
+        border-left: solid 1px black;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+}
+
+p,h3 {
+    padding:10px;
+}
+.box:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}

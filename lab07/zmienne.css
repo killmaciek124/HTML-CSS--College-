@@ -1,0 +1,45 @@
+.box-1 {
+  background-color: white;
+}
+
+.box-2 {
+  background-color: green;
+}
+
+.box-3 {
+  background-color: darkgreen;
+}
+
+.box-4 {
+  background-color: darkgrey;
+}
+
+.box-5 {
+  background-color: gray;
+}
+
+.box-6 {
+  background-color: lightgray;
+}
+
+.box-7 {
+  background-color: black;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  width: 300px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px black solid;
+  text-align: center;
+}
+/*# sourceMappingURL=zmienne.css.map */
