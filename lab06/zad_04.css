@@ -107,7 +107,7 @@ main {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: repeat(9, 1fr);
-      grid-template-areas: "button header-panel header-panel header-panel " "klasanav1 important-box important-box important-box" "klasanav1 item1 item2 item3" "klasanav1 item1 item2 item3" ". item1 item2 item3" "klasanav2 second-important-box second-important-box second-important-box" "klasanav2 item4 item5 item6" "klasanav2 item4 item5 item6" ". item4 item5 item6";
+      grid-template-areas: "button header-panel header-panel header-panel " "klasanav1 important-box important-box important-box" "klasanav1 item1 item2 item3" "klasanav1 item1 item2 item3" ". item1 item2 item3" "klasanav2 second-important-box second-important-box second-important-box" "klasanav2 item4 item5 item6" "klasanav2 item4 item5 item6" ". item4 item5 item6";
   grid-gap: 15px;
   height: 72vh;
 }
